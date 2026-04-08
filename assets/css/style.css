@@ -1352,6 +1352,234 @@ body.sidebar-collapsed .ep-main-content {
     flex-wrap: wrap;
 }
 
+/* ── Topbar Site Butonları ───────────────────────────────────── */
+.ep-topbar-site-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.ep-site-btn-entegrasyon {
+    background: linear-gradient(135deg, #ea580c, #f97316);
+    color: #fff;
+}
+.ep-site-btn-entegrasyon:hover {
+    background: linear-gradient(135deg, #c2410c, #ea580c);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(234,88,12,0.3);
+}
+
+.ep-site-btn-eticaret {
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: #fff;
+}
+.ep-site-btn-eticaret:hover {
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+}
+
+/* ── Pricing / Paket Kartları ───────────────────────────────── */
+.ep-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.ep-pricing-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 2px solid #e2e8f0;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s;
+}
+.ep-pricing-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+}
+
+.ep-pricing-popular {
+    border-color: #ea580c;
+    box-shadow: 0 8px 30px rgba(234,88,12,0.15);
+}
+
+.ep-pricing-badge {
+    position: absolute;
+    top: 16px;
+    right: -32px;
+    transform: rotate(45deg);
+    padding: 4px 40px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.ep-pricing-header {
+    padding: 28px 24px 20px;
+    text-align: center;
+    border-bottom: 3px solid #e2e8f0;
+}
+.ep-pricing-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+.ep-pricing-price {
+    margin-bottom: 8px;
+}
+.ep-pricing-amount {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--ep-text);
+}
+.ep-pricing-period {
+    font-size: 14px;
+    color: var(--ep-text-light);
+    margin-left: 2px;
+}
+
+.ep-pricing-customers {
+    font-size: 12px;
+    color: var(--ep-text-light);
+}
+.ep-pricing-customers i {
+    margin-right: 4px;
+}
+
+.ep-pricing-body {
+    padding: 20px 24px;
+}
+
+.ep-pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ep-pricing-features li {
+    padding: 6px 0;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.ep-feature-disabled {
+    color: #cbd5e1;
+    text-decoration: line-through;
+}
+
+.ep-pricing-footer {
+    padding: 16px 24px 24px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+/* ── Modal ──────────────────────────────────────────────────── */
+.ep-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+}
+
+.ep-modal {
+    background: #fff;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 640px;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.ep-modal-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ep-modal-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.ep-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--ep-text-light);
+    line-height: 1;
+}
+.ep-modal-close:hover {
+    color: var(--ep-danger);
+}
+
+.ep-modal-body {
+    padding: 24px;
+}
+
+.ep-modal-footer {
+    padding: 16px 24px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+/* ── Activity List ──────────────────────────────────────────── */
+.ep-activity-list {
+    padding: 0;
+}
+.ep-activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 20px;
+    border-bottom: 1px solid #f1f5f9;
+}
+.ep-activity-item:last-child {
+    border-bottom: none;
+}
+.ep-activity-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+.ep-activity-text {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ep-text);
+}
+.ep-activity-time {
+    font-size: 11px;
+    color: var(--ep-text-light);
+    margin-top: 2px;
+}
+
 /* ── Responsive AI ───────────────────────────────────────────── */
 @media (max-width: 992px) {
     .ep-ai-banner-content {

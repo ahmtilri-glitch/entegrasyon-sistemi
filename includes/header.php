@@ -41,6 +41,14 @@ if (!defined('EP_ROOT')) die('Doğrudan erişim yasak.');
             </div>
         </div>
         <div class="ep-topbar-right">
+            <a href="index.php?page=entegrasyon-satis" class="ep-topbar-site-btn ep-site-btn-entegrasyon" title="Entegrasyon Sitemiz">
+                <i class="bi bi-box-seam"></i>
+                <span>Entegrasyon Sitemiz</span>
+            </a>
+            <a href="#" class="ep-topbar-site-btn ep-site-btn-eticaret" title="E-ticaret Sitemiz">
+                <i class="bi bi-shop-window"></i>
+                <span>E-ticaret Sitemiz</span>
+            </a>
             <button class="ep-topbar-btn ep-notification-btn" title="Bildirimler">
                 <i class="bi bi-bell"></i>
                 <span class="ep-badge-dot"></span>

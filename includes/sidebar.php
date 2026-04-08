@@ -38,6 +38,10 @@ $menu_items = [
     ['group' => 'PAZARLAMA'],
     ['page' => 'seo',           'icon' => 'bi-search-heart',     'label' => 'SEO'],
     
+    ['group' => 'SATIŞ YÖNETİMİ'],
+    ['page' => 'entegrasyon-satis', 'icon' => 'bi-box-seam',    'label' => 'Entegrasyon Satış'],
+    ['page' => 'musteri-paneli',    'icon' => 'bi-person-workspace', 'label' => 'Müşteri Paneli'],
+    
     ['group' => 'YÖNETİM'],
     ['page' => 'musteriler',    'icon' => 'bi-people',           'label' => 'Müşteriler'],
     ['page' => 'muhasebe',      'icon' => 'bi-calculator',       'label' => 'Ön Muhasebe'],

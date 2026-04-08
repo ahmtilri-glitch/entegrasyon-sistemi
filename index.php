@@ -38,6 +38,8 @@ $allowed_pages = [
     'destek'                 => 'pages/destek.php',
     'loglar'                 => 'pages/loglar.php',
     'ayarlar'                => 'pages/ayarlar.php',
+    'entegrasyon-satis'      => 'pages/entegrasyon-satis.php',
+    'musteri-paneli'         => 'pages/musteri-paneli.php',
 ];
 
 // Sayfa var mı kontrol et
@@ -74,6 +76,8 @@ $page_titles = [
     'destek'        => 'Destek',
     'loglar'        => 'Loglar',
     'ayarlar'       => 'Ayarlar',
+    'entegrasyon-satis' => 'Entegrasyon Satış',
+    'musteri-paneli'    => 'Müşteri Paneli',
 ];
 
 $page_title = $page_titles[$page] ?? 'Entegrasyon Pro';
