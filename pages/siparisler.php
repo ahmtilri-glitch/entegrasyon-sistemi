@@ -51,11 +51,11 @@ if (!defined('EP_ROOT')) die('Doğrudan erişim yasak.');
     <button class="ep-marketplace-tab active">
         <span>Tümü</span> <span class="ep-badge ep-badge-info" style="font-size:10px;">1,248</span>
     </button>
-    <button class="ep-marketplace-tab"><span class="mp-icon mp-trendyol">TY</span> Trendyol <span class="ep-badge" style="font-size:10px;background:#fff7ed;color:#ea580c;">437</span></button>
-    <button class="ep-marketplace-tab"><span class="mp-icon mp-hepsiburada">HB</span> Hepsiburada <span class="ep-badge" style="font-size:10px;background:#dbeafe;color:#2563eb;">312</span></button>
-    <button class="ep-marketplace-tab"><span class="mp-icon mp-n11">N11</span> N11 <span class="ep-badge" style="font-size:10px;background:#f3e8ff;color:#7c3aed;">187</span></button>
-    <button class="ep-marketplace-tab"><span class="mp-icon mp-ciceksepeti">ÇS</span> Çiçeksepeti</button>
-    <button class="ep-marketplace-tab"><span class="mp-icon mp-amazon">AMZ</span> Amazon TR</button>
+    <button class="ep-marketplace-tab"><img src="assets/images/marketplaces/trendyol.svg" alt="Trendyol" class="ep-tab-logo"> Trendyol <span class="ep-badge" style="font-size:10px;background:#fff7ed;color:#ea580c;">437</span></button>
+    <button class="ep-marketplace-tab"><img src="assets/images/marketplaces/hepsiburada.svg" alt="Hepsiburada" class="ep-tab-logo"> Hepsiburada <span class="ep-badge" style="font-size:10px;background:#dbeafe;color:#2563eb;">312</span></button>
+    <button class="ep-marketplace-tab"><img src="assets/images/marketplaces/n11.svg" alt="N11" class="ep-tab-logo"> N11 <span class="ep-badge" style="font-size:10px;background:#f3e8ff;color:#7c3aed;">187</span></button>
+    <button class="ep-marketplace-tab"><img src="assets/images/marketplaces/ciceksepeti.svg" alt="Çiçeksepeti" class="ep-tab-logo"> Çiçeksepeti</button>
+    <button class="ep-marketplace-tab"><img src="assets/images/marketplaces/amazon.svg" alt="Amazon TR" class="ep-tab-logo"> Amazon TR</button>
 </div>
 
 <div class="ep-card">

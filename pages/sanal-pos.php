@@ -5,20 +5,20 @@
 if (!defined('EP_ROOT')) die('Doğrudan erişim yasak.');
 
 $pos_systems = [
-    ['name' => 'iyzico',       'color' => '#2563eb'],
-    ['name' => 'PayTR',        'color' => '#16a34a'],
-    ['name' => 'Param',        'color' => '#ea580c'],
-    ['name' => 'Sipay',        'color' => '#7c3aed'],
-    ['name' => 'Moka',         'color' => '#0d9488'],
-    ['name' => 'Shopier',      'color' => '#dc2626'],
-    ['name' => 'Paratika',     'color' => '#eab308'],
-    ['name' => 'PayU',         'color' => '#16a34a'],
-    ['name' => 'Garanti BBVA', 'color' => '#059669'],
-    ['name' => 'Yapı Kredi',   'color' => '#2563eb'],
-    ['name' => 'İş Bankası',   'color' => '#7c3aed'],
-    ['name' => 'Akbank',       'color' => '#dc2626'],
-    ['name' => 'QNB Finansbank','color'=> '#7c3aed'],
-    ['name' => 'Halkbank',     'color' => '#0d9488'],
+    ['name' => 'iyzico',       'logo' => 'assets/images/pos/iyzico.svg'],
+    ['name' => 'PayTR',        'logo' => 'assets/images/pos/paytr.svg'],
+    ['name' => 'Param',        'logo' => 'assets/images/pos/param.svg'],
+    ['name' => 'Sipay',        'logo' => 'assets/images/pos/sipay.svg'],
+    ['name' => 'Moka',         'logo' => 'assets/images/pos/moka.svg'],
+    ['name' => 'Shopier',      'logo' => 'assets/images/pos/shopier.svg'],
+    ['name' => 'Paratika',     'logo' => 'assets/images/pos/paratika.svg'],
+    ['name' => 'PayU',         'logo' => 'assets/images/pos/payu.svg'],
+    ['name' => 'Garanti BBVA', 'logo' => 'assets/images/pos/garanti.svg'],
+    ['name' => 'Yapı Kredi',   'logo' => 'assets/images/pos/yapikredi.svg'],
+    ['name' => 'İş Bankası',   'logo' => 'assets/images/pos/isbankasi.svg'],
+    ['name' => 'Akbank',       'logo' => 'assets/images/pos/akbank.svg'],
+    ['name' => 'QNB Finansbank','logo'=> 'assets/images/pos/qnb.svg'],
+    ['name' => 'Halkbank',     'logo' => 'assets/images/pos/halkbank.svg'],
 ];
 ?>
 
@@ -50,9 +50,7 @@ $pos_systems = [
     <?php foreach ($pos_systems as $ps): ?>
     <div class="ep-provider-card">
         <div class="ep-provider-card-top">
-            <div class="ep-provider-icon" style="background:<?= $ps['color'] ?>;">
-                <i class="bi bi-credit-card" style="font-size:18px;"></i>
-            </div>
+            <img src="<?= $ps['logo'] ?>" alt="<?= $ps['name'] ?>" class="ep-provider-logo">
             <div class="ep-provider-card-info">
                 <h4><?= $ps['name'] ?></h4>
                 <span><span class="ep-badge ep-badge-secondary" style="font-size:10px;">Pasif</span></span>

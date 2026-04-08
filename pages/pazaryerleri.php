@@ -5,18 +5,18 @@
 if (!defined('EP_ROOT')) die('Doğrudan erişim yasak.');
 
 $marketplaces = [
-    ['name' => 'Trendyol',     'code' => 'TY',  'class' => 'mp-trendyol',     'status' => 'active',  'products' => '12,450', 'orders' => '437'],
-    ['name' => 'Hepsiburada',  'code' => 'HB',  'class' => 'mp-hepsiburada',  'status' => 'active',  'products' => '8,720',  'orders' => '312'],
-    ['name' => 'N11',          'code' => 'N11', 'class' => 'mp-n11',          'status' => 'error',   'products' => '5,340',  'orders' => '187'],
-    ['name' => 'Amazon TR',    'code' => 'AMZ', 'class' => 'mp-amazon',       'status' => 'error',   'products' => '3,100',  'orders' => '98'],
-    ['name' => 'Çiçeksepeti',  'code' => 'ÇS',  'class' => 'mp-ciceksepeti',  'status' => 'active',  'products' => '3,210',  'orders' => '98'],
-    ['name' => 'İdefix',       'code' => 'IDX', 'class' => 'mp-idefix',       'status' => 'passive', 'products' => '0',      'orders' => '0'],
-    ['name' => 'Koçtaş',       'code' => 'KOÇ', 'class' => 'mp-koctas',       'status' => 'active',  'products' => '1,200',  'orders' => '45'],
-    ['name' => 'Teknosa',      'code' => 'TNS', 'class' => 'mp-teknosa',      'status' => 'passive', 'products' => '0',      'orders' => '0'],
-    ['name' => 'MediaMarkt',   'code' => 'MM',  'class' => 'mp-mediamarkt',   'status' => 'active',  'products' => '2,100',  'orders' => '67'],
-    ['name' => 'Pazarama',     'code' => 'PZR', 'class' => 'mp-pazarama',     'status' => 'active',  'products' => '4,500',  'orders' => '120'],
-    ['name' => 'PTT AVM',      'code' => 'PTT', 'class' => 'mp-pttavm',       'status' => 'passive', 'products' => '0',      'orders' => '0'],
-    ['name' => 'Temu',         'code' => 'TMU', 'class' => 'mp-temu',         'status' => 'passive', 'products' => '0',      'orders' => '0'],
+    ['name' => 'Trendyol',     'logo' => 'assets/images/marketplaces/trendyol.svg',     'status' => 'active',  'products' => '12,450', 'orders' => '437'],
+    ['name' => 'Hepsiburada',  'logo' => 'assets/images/marketplaces/hepsiburada.svg',  'status' => 'active',  'products' => '8,720',  'orders' => '312'],
+    ['name' => 'N11',          'logo' => 'assets/images/marketplaces/n11.svg',           'status' => 'error',   'products' => '5,340',  'orders' => '187'],
+    ['name' => 'Amazon TR',    'logo' => 'assets/images/marketplaces/amazon.svg',        'status' => 'error',   'products' => '3,100',  'orders' => '98'],
+    ['name' => 'Çiçeksepeti',  'logo' => 'assets/images/marketplaces/ciceksepeti.svg',   'status' => 'active',  'products' => '3,210',  'orders' => '98'],
+    ['name' => 'İdefix',       'logo' => 'assets/images/marketplaces/idefix.svg',        'status' => 'passive', 'products' => '0',      'orders' => '0'],
+    ['name' => 'Koçtaş',       'logo' => 'assets/images/marketplaces/koctas.svg',        'status' => 'active',  'products' => '1,200',  'orders' => '45'],
+    ['name' => 'Teknosa',      'logo' => 'assets/images/marketplaces/teknosa.svg',       'status' => 'passive', 'products' => '0',      'orders' => '0'],
+    ['name' => 'MediaMarkt',   'logo' => 'assets/images/marketplaces/mediamarkt.svg',    'status' => 'active',  'products' => '2,100',  'orders' => '67'],
+    ['name' => 'Pazarama',     'logo' => 'assets/images/marketplaces/pazarama.svg',      'status' => 'active',  'products' => '4,500',  'orders' => '120'],
+    ['name' => 'PTT AVM',      'logo' => 'assets/images/marketplaces/pttavm.svg',        'status' => 'passive', 'products' => '0',      'orders' => '0'],
+    ['name' => 'Temu',         'logo' => 'assets/images/marketplaces/temu.svg',          'status' => 'passive', 'products' => '0',      'orders' => '0'],
 ];
 ?>
 
@@ -61,7 +61,7 @@ $marketplaces = [
     <?php foreach ($marketplaces as $mp): ?>
     <div class="ep-provider-card">
         <div class="ep-provider-card-top">
-            <div class="ep-provider-icon <?= $mp['class'] ?>"><?= $mp['code'] ?></div>
+            <img src="<?= $mp['logo'] ?>" alt="<?= $mp['name'] ?>" class="ep-provider-logo">
             <div class="ep-provider-card-info">
                 <h4><?= $mp['name'] ?></h4>
                 <span>

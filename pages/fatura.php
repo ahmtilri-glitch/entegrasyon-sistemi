@@ -5,17 +5,17 @@
 if (!defined('EP_ROOT')) die('Doğrudan erişim yasak.');
 
 $fatura_providers = [
-    ['name' => 'Hepsiburada e-Faturam', 'url' => 'hepsiburadaefaturam.com', 'color' => '#ea580c', 'status' => 'active'],
-    ['name' => 'EDM e-Fatura',          'url' => 'edm.com.tr',             'color' => '#16a34a', 'status' => 'passive'],
-    ['name' => 'Foriba (Sovos)',        'url' => 'foriba.com',             'color' => '#7c3aed', 'status' => 'passive'],
-    ['name' => 'İnnova e-Fatura',       'url' => 'innova.com.tr',          'color' => '#dc2626', 'status' => 'passive'],
-    ['name' => 'Netsmart e-Fatura',     'url' => 'netsmart.com.tr',        'color' => '#2563eb', 'status' => 'passive'],
-    ['name' => 'Bimser e-Fatura',       'url' => 'bimser.net',             'color' => '#dc2626', 'status' => 'passive'],
-    ['name' => 'Uyumsoft e-Fatura',     'url' => 'uyumsoft.com.tr',        'color' => '#7c3aed', 'status' => 'passive'],
-    ['name' => 'Logo e-Fatura',         'url' => 'logo.com.tr',            'color' => '#dc2626', 'status' => 'passive'],
-    ['name' => 'Paraşüt e-Fatura',      'url' => 'parasut.com',            'color' => '#0d9488', 'status' => 'passive'],
-    ['name' => 'GİB e-Arşiv Portal',    'url' => 'earsivportal.efatura.gov.tr', 'color' => '#dc2626', 'status' => 'passive'],
-    ['name' => 'Trendyol e-Fatura',     'url' => 'partner.trendyol.com',   'color' => '#ea580c', 'status' => 'passive'],
+    ['name' => 'Hepsiburada e-Faturam', 'url' => 'hepsiburadaefaturam.com', 'logo' => 'assets/images/fatura/hepsiburada-efatura.svg', 'status' => 'active'],
+    ['name' => 'EDM e-Fatura',          'url' => 'edm.com.tr',             'logo' => 'assets/images/fatura/edm.svg',                 'status' => 'passive'],
+    ['name' => 'Foriba (Sovos)',        'url' => 'foriba.com',             'logo' => 'assets/images/fatura/foriba.svg',              'status' => 'passive'],
+    ['name' => 'İnnova e-Fatura',       'url' => 'innova.com.tr',          'logo' => 'assets/images/fatura/innova.svg',              'status' => 'passive'],
+    ['name' => 'Netsmart e-Fatura',     'url' => 'netsmart.com.tr',        'logo' => 'assets/images/fatura/netsmart.svg',            'status' => 'passive'],
+    ['name' => 'Bimser e-Fatura',       'url' => 'bimser.net',             'logo' => 'assets/images/fatura/bimser.svg',              'status' => 'passive'],
+    ['name' => 'Uyumsoft e-Fatura',     'url' => 'uyumsoft.com.tr',        'logo' => 'assets/images/fatura/uyumsoft.svg',            'status' => 'passive'],
+    ['name' => 'Logo e-Fatura',         'url' => 'logo.com.tr',            'logo' => 'assets/images/fatura/logo.svg',                'status' => 'passive'],
+    ['name' => 'Paraşüt e-Fatura',      'url' => 'parasut.com',            'logo' => 'assets/images/fatura/parasut.svg',             'status' => 'passive'],
+    ['name' => 'GİB e-Arşiv Portal',    'url' => 'earsivportal.efatura.gov.tr', 'logo' => 'assets/images/fatura/gib.svg',             'status' => 'passive'],
+    ['name' => 'Trendyol e-Fatura',     'url' => 'partner.trendyol.com',   'logo' => 'assets/images/fatura/trendyol-efatura.svg',    'status' => 'passive'],
 ];
 ?>
 
@@ -82,9 +82,7 @@ $fatura_providers = [
     <?php foreach ($fatura_providers as $fp): ?>
     <div class="ep-provider-card">
         <div class="ep-provider-card-top">
-            <div class="ep-provider-icon" style="background: <?= $fp['color'] ?>;">
-                <span style="font-size:9px;font-weight:700;"><?= strtoupper(substr($fp['name'], 0, 3)) ?></span>
-            </div>
+            <img src="<?= $fp['logo'] ?>" alt="<?= $fp['name'] ?>" class="ep-provider-logo">
             <div class="ep-provider-card-info">
                 <h4><?= $fp['name'] ?></h4>
                 <span><?= $fp['url'] ?> — 

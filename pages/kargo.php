@@ -5,14 +5,14 @@
 if (!defined('EP_ROOT')) die('Doğrudan erişim yasak.');
 
 $kargo_firms = [
-    ['name' => 'Yurtiçi Kargo',    'color' => '#0d9488', 'status' => 'active',  'shipments' => 156],
-    ['name' => 'Aras Kargo',       'color' => '#2563eb', 'status' => 'setup',   'shipments' => 0],
-    ['name' => 'MNG Kargo',        'color' => '#dc2626', 'status' => 'active',  'shipments' => 89],
-    ['name' => 'Sürat Kargo',      'color' => '#f97316', 'status' => 'passive', 'shipments' => 0],
-    ['name' => 'HepsiJet',        'color' => '#7c3aed', 'status' => 'active',  'shipments' => 67],
-    ['name' => 'Trendyol Express', 'color' => '#ea580c', 'status' => 'active',  'shipments' => 30],
-    ['name' => 'Sendeo',          'color' => '#16a34a', 'status' => 'passive', 'shipments' => 0],
-    ['name' => 'PTT Kargo',       'color' => '#eab308', 'status' => 'passive', 'shipments' => 0],
+    ['name' => 'Yurtiçi Kargo',    'logo' => 'assets/images/kargo/yurtici.svg',          'status' => 'active',  'shipments' => 156],
+    ['name' => 'Aras Kargo',       'logo' => 'assets/images/kargo/aras.svg',             'status' => 'setup',   'shipments' => 0],
+    ['name' => 'MNG Kargo',        'logo' => 'assets/images/kargo/mng.svg',              'status' => 'active',  'shipments' => 89],
+    ['name' => 'Sürat Kargo',      'logo' => 'assets/images/kargo/surat.svg',            'status' => 'passive', 'shipments' => 0],
+    ['name' => 'HepsiJet',        'logo' => 'assets/images/kargo/hepsijet.svg',          'status' => 'active',  'shipments' => 67],
+    ['name' => 'Trendyol Express', 'logo' => 'assets/images/kargo/trendyol-express.svg', 'status' => 'active',  'shipments' => 30],
+    ['name' => 'Sendeo',          'logo' => 'assets/images/kargo/sendeo.svg',            'status' => 'passive', 'shipments' => 0],
+    ['name' => 'PTT Kargo',       'logo' => 'assets/images/kargo/ptt.svg',               'status' => 'passive', 'shipments' => 0],
 ];
 ?>
 
@@ -56,9 +56,7 @@ $kargo_firms = [
     <?php foreach ($kargo_firms as $kf): ?>
     <div class="ep-provider-card">
         <div class="ep-provider-card-top">
-            <div class="ep-provider-icon" style="background: <?= $kf['color'] ?>;">
-                <i class="bi bi-truck" style="font-size:18px;"></i>
-            </div>
+            <img src="<?= $kf['logo'] ?>" alt="<?= $kf['name'] ?>" class="ep-provider-logo">
             <div class="ep-provider-card-info">
                 <h4><?= $kf['name'] ?></h4>
                 <span>

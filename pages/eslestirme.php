@@ -64,15 +64,15 @@ if (!defined('EP_ROOT')) die('Doğrudan erişim yasak.');
 
 <!-- Pazaryeri Seçimi -->
 <div class="ep-marketplace-tabs">
-    <button class="ep-marketplace-tab active"><span class="mp-icon mp-trendyol">TY</span> Trendyol</button>
-    <button class="ep-marketplace-tab"><span class="mp-icon mp-hepsiburada">HB</span> Hepsiburada</button>
-    <button class="ep-marketplace-tab"><span class="mp-icon mp-n11">N11</span> N11</button>
-    <button class="ep-marketplace-tab"><span class="mp-icon mp-amazon">AMZ</span> Amazon TR</button>
-    <button class="ep-marketplace-tab"><span class="mp-icon mp-ciceksepeti">ÇS</span> Çiçeksepeti</button>
-    <button class="ep-marketplace-tab"><span class="mp-icon mp-koctas">KOÇ</span> Koçtaş</button>
-    <button class="ep-marketplace-tab"><span class="mp-icon mp-teknosa">TNS</span> Teknosa</button>
-    <button class="ep-marketplace-tab"><span class="mp-icon mp-mediamarkt">MM</span> MediaMarkt</button>
-    <button class="ep-marketplace-tab"><span class="mp-icon mp-pazarama">PZR</span> Pazarama</button>
+    <button class="ep-marketplace-tab active"><img src="assets/images/marketplaces/trendyol.svg" alt="Trendyol" class="ep-tab-logo"> Trendyol</button>
+    <button class="ep-marketplace-tab"><img src="assets/images/marketplaces/hepsiburada.svg" alt="Hepsiburada" class="ep-tab-logo"> Hepsiburada</button>
+    <button class="ep-marketplace-tab"><img src="assets/images/marketplaces/n11.svg" alt="N11" class="ep-tab-logo"> N11</button>
+    <button class="ep-marketplace-tab"><img src="assets/images/marketplaces/amazon.svg" alt="Amazon TR" class="ep-tab-logo"> Amazon TR</button>
+    <button class="ep-marketplace-tab"><img src="assets/images/marketplaces/ciceksepeti.svg" alt="Çiçeksepeti" class="ep-tab-logo"> Çiçeksepeti</button>
+    <button class="ep-marketplace-tab"><img src="assets/images/marketplaces/koctas.svg" alt="Koçtaş" class="ep-tab-logo"> Koçtaş</button>
+    <button class="ep-marketplace-tab"><img src="assets/images/marketplaces/teknosa.svg" alt="Teknosa" class="ep-tab-logo"> Teknosa</button>
+    <button class="ep-marketplace-tab"><img src="assets/images/marketplaces/mediamarkt.svg" alt="MediaMarkt" class="ep-tab-logo"> MediaMarkt</button>
+    <button class="ep-marketplace-tab"><img src="assets/images/marketplaces/pazarama.svg" alt="Pazarama" class="ep-tab-logo"> Pazarama</button>
 </div>
 
 <!-- Eşleştirme Tablosu -->

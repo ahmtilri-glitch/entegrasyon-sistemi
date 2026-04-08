@@ -5,17 +5,17 @@
 if (!defined('EP_ROOT')) die('Doğrudan erişim yasak.');
 
 $erp_systems = [
-    ['name' => 'SAP Business One', 'color' => '#0d9488'],
-    ['name' => 'Logo Tiger',       'color' => '#dc2626'],
-    ['name' => 'Mikro Yazılım',    'color' => '#2563eb'],
-    ['name' => 'Netsis',           'color' => '#7c3aed'],
-    ['name' => 'Nebim V3',         'color' => '#ea580c'],
-    ['name' => 'Dia Yazılım',      'color' => '#16a34a'],
-    ['name' => 'Akinon',           'color' => '#f97316'],
-    ['name' => 'Paraşüt',          'color' => '#0d9488'],
-    ['name' => 'Bizim Hesap',      'color' => '#eab308'],
-    ['name' => 'Luca',             'color' => '#dc2626'],
-    ['name' => 'Uyumsoft ERP',     'color' => '#7c3aed'],
+    ['name' => 'SAP Business One', 'logo' => 'assets/images/erp/sap.svg'],
+    ['name' => 'Logo Tiger',       'logo' => 'assets/images/erp/logo-tiger.svg'],
+    ['name' => 'Mikro Yazılım',    'logo' => 'assets/images/erp/mikro.svg'],
+    ['name' => 'Netsis',           'logo' => 'assets/images/erp/netsis.svg'],
+    ['name' => 'Nebim V3',         'logo' => 'assets/images/erp/nebim.svg'],
+    ['name' => 'Dia Yazılım',      'logo' => 'assets/images/erp/dia.svg'],
+    ['name' => 'Akinon',           'logo' => 'assets/images/erp/akinon.svg'],
+    ['name' => 'Paraşüt',          'logo' => 'assets/images/erp/parasut.svg'],
+    ['name' => 'Bizim Hesap',      'logo' => 'assets/images/erp/bizim-hesap.svg'],
+    ['name' => 'Luca',             'logo' => 'assets/images/erp/luca.svg'],
+    ['name' => 'Uyumsoft ERP',     'logo' => 'assets/images/erp/uyumsoft.svg'],
 ];
 ?>
 
@@ -35,9 +35,7 @@ $erp_systems = [
     <?php foreach ($erp_systems as $erp): ?>
     <div class="ep-provider-card">
         <div class="ep-provider-card-top">
-            <div class="ep-provider-icon" style="background: <?= $erp['color'] ?>;">
-                <i class="bi bi-diagram-3" style="font-size:18px;"></i>
-            </div>
+            <img src="<?= $erp['logo'] ?>" alt="<?= $erp['name'] ?>" class="ep-provider-logo">
             <div class="ep-provider-card-info">
                 <h4><?= $erp['name'] ?></h4>
                 <span><span class="ep-badge ep-badge-secondary" style="font-size:10px;">Pasif</span></span>
